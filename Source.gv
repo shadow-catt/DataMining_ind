@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="酒精 <= 12.78\ngini = 0.642\nsamples = 124\nvalue = [36, 57, 31]\nclass = 雪莉", fillcolor="#d0f9e1"] ;
+1 [label="类黄酮 <= 0.955\ngini = 0.183\nsamples = 59\nvalue = [0, 53, 6]\nclass = 雪莉", fillcolor="#4fe88f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 5\nvalue = [0, 0, 5]\nclass = 贝尔摩德", fillcolor="#8139e5"] ;
+1 -> 2 ;
+3 [label="od280/od315稀释葡萄酒 <= 1.44\ngini = 0.036\nsamples = 54\nvalue = [0, 53, 1]\nclass = 雪莉", fillcolor="#3de583"] ;
+1 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = 贝尔摩德", fillcolor="#8139e5"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 53\nvalue = [0, 53, 0]\nclass = 雪莉", fillcolor="#39e581"] ;
+3 -> 5 ;
+6 [label="类黄酮 <= 1.9\ngini = 0.542\nsamples = 65\nvalue = [36, 4, 25]\nclass = 琴酒", fillcolor="#f8dcc9"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="gini = 0.0\nsamples = 25\nvalue = [0, 0, 25]\nclass = 贝尔摩德", fillcolor="#8139e5"] ;
+6 -> 7 ;
+8 [label="脯氨酸 <= 591.0\ngini = 0.18\nsamples = 40\nvalue = [36, 4, 0]\nclass = 琴酒", fillcolor="#e88f4f"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3, 0]\nclass = 雪莉", fillcolor="#39e581"] ;
+8 -> 9 ;
+10 [label="灰的碱性 <= 27.5\ngini = 0.053\nsamples = 37\nvalue = [36, 1, 0]\nclass = 琴酒", fillcolor="#e6843e"] ;
+8 -> 10 ;
+11 [label="gini = 0.0\nsamples = 36\nvalue = [36, 0, 0]\nclass = 琴酒", fillcolor="#e58139"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = 雪莉", fillcolor="#39e581"] ;
+10 -> 12 ;
+}
